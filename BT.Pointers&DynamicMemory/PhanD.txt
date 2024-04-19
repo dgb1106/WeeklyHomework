@@ -1,0 +1,123 @@
+Khai báo nào sau đây là không hợp lệ:
+i.	int *p = new int(10);
+ii.	int *p = new int[10];
+iii.	int *p = 10;
+iv.	int *p = NULL;
+Đáp án: iii vì khi khai báo con trỏ phải gán với một địa chỉ hoặc cấp phát động
+
+Kết quả của a là bao nhiêu sau câu lệnh:
+int *p = new int[3]; p[0]=1; p[1]=2; p[2]=4; int a=&p[2]-&p[1]
+i.	2
+ii.	4
+iii.	1
+iv.	Trình dịch báo lỗi
+Đáp án: iii
+
+Phát biểu nào sau đây là không chính xác đối với mảng động
+i.	Cung cấp độ dài cho mảng động trước khi sử dụng
+ii.	Độ dài của mảng động có thể được thay đổi
+iii.	Phải cung cấp độ dài cho mảng động ngay khi khai báo
+Đáp án: iii
+
+
+Phát biểu nào sau là không đúng đối với truyền mảng động cho hàm 
+i.	Là kiểu truyền địa chỉ
+ii.	Là kiểu truyền con trỏ
+iii.	Là kiểu truyền giá trị
+iv.	Là kiểu truyền tham chiếu
+Đáp án: iii
+
+
+Lời gọi hàm nào sau đây là không đúng
+void printPtr(int *p); void print(int p);
+i.	int a = 0; print(a);
+ii.	int *a = new int(0); print(a);
+iii.	int a = 0; printPtr(a);
+iv.	int *a = new int(0); printPtr(a);
+Đáp án: ii, iii
+
+
+Cho các khai báo sau, những câu lệnh nào không đúng về cách lập trình:
+int *aPtr = new int(0); int *sPtr; int number = 4;
+i.	sPtr = aPtr;
+ii.	*sPtr = number;
+iii.	number = aPtr;
+iv.	aPtr = &number;
+Đáp án: iii
+
+Đoạn mã nào sau đây để in ra giá trị của một mảng động (con trỏ *p) N phần tử:
+i.	for (int i=0; i<N; i++) cout << p+i << “ “;
+ii.	for (int i=0; i<N; i++) cout << *p+i << “ “;
+iii.	for (int i=0; i<N; i++) cout << *(p+i) << “ “;
+iv.	for (int i=0; i<N; i++) cout << *p[i] << “ “;
+Đáp án: iii
+
+Kết quả đoạn mã sau là gì:
+	int a=5, *p1, *p2;
+	p1 = new int(10);
+	p2 = new int(20);
+	*p1 = a; p2 = &a; a++;
+	cout << " " << *p1 << " " << *p2 << endl;
+i.	10 20
+ii.	5 5
+iii.	10 6
+iv.	5 6
+Đáp án: iv
+
+Giá trị của *p sau đoạn mã sau là gì:
+	void a(int *p) { *p++; }
+	void b(int *p) { (*p)++; }
+	void c(int p) { p++; }
+	int main
+	{
+	    int *p = new int(5);
+	    b(p); a(p); c(*p);
+	}
+i.	5
+ii.	6 
+iii.	7 
+iv.	8 
+Đáp án: ii
+
+Kết quả đoạn mã sau là gì:
+	int *p1, *p2;
+	p1 = new int;
+	p2 = new int;
+	*p1 = 10;
+	*p2 = 20;
+	cout << *p1 << " " << *p2;
+	p1 = p2;
+	cout << " " << *p1 << " " << *p2;
+	*p1 = 30;
+	cout << " " << *p1 << " " << *p2 << endl;
+i.	10 20 20 20 30 20
+ii.	10 20 10 20 30 30 
+iii.	10 10 20 20 30 30 
+iv.	10 20 20 20 30 30 
+Đáp án: i
+
+Kết quả đoạn mã sau là gì:
+	int *p1, *p2, *p3;
+	p1 = new int(10); p2 = new int(20); p3 = new int(*p1 + *p2);
+	p1 = p2; p2 = p3; p3 = p1;
+	cout << *p1 << " " << *p2 << " " << *p3 << endl;
+i.	10 20 30
+ii.	20 30 10
+iii.	20 30 20
+iv.	30 20 10
+Đáp án: iii
+
+Câu lệnh nào trả về giá trị phần tử thứ 3 của mảng int *p = new int[10];
+i.	p+2;
+ii.	*p+2;
+iii.	*(p+2);
+iv.	*p[2];
+Đáp án: iii
+
+Phát biểu nào sau đây không đúng đối vởi mảng int *p = new int[5];
+i.	p là địa chỉ của p[0]
+ii.	*p là giá trị của p[0]
+iii.	*p+1  là giá trị của p[1]
+iv.	p+1 là địa chỉ của p[1]
+Đáp án: iii
+
